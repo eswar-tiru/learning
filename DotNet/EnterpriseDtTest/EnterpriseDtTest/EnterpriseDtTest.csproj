@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B2B4E46-8AA1-4128-8BE1-C436DAC39E96}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnterpriseDtTest</RootNamespace>
+    <AssemblyName>EnterpriseDtTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="edtFTPnetPRO">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\Server\Tradewinds\packages\Eze.Thirdparty.EnterpriseDTSFTP.9.6.0.40\edtFTPnetPRO.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.FTPS">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.FTPS.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTP">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.HTTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTPCommon">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.HTTPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SFTP">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SFTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SFTPCommon">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SFTPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSHClient">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SSHClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSHCommon">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SSHCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLClient">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SSLClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLCommon">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.SSLCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.XML">
+      <HintPath>D:\SRPs\OMS Integrations\tradewinds-server\ThirdParty\Eldos\v9.1.209\Bin\SecureBlackbox.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
